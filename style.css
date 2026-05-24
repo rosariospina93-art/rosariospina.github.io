@@ -1,14 +1,16 @@
-:root { --ocra: #c49500; --nero: #000000; --bianco: #ffffff; }
-body { font-family: sans-serif; margin: 0; }
-.editorial-header { padding: 20px; border-bottom: 2px solid var(--nero); }
-.main-title a { font-family: 'Anton', sans-serif; font-size: 2.2rem; text-decoration: none; color: black; text-transform: uppercase; }
+:root { --ocra: #c49500; --terracotta: #b35a2d; --nero: #000000; --bianco: #ffffff; }
+body { font-family: sans-serif; margin: 0; color: var(--nero); }
+.editorial-header { padding: 20px; border-bottom: 2px solid var(--nero); display: flex; justify-content: space-between; }
+.main-title a { font-family: 'Anton', sans-serif; font-size: 2.2rem; text-decoration: none; color: black; text-transform: uppercase; line-height: 0.8; }
+.subtitle { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 900; }
 .content-block-white { padding: 40px 20px; text-align: center; }
 .gallery-grid { display: flex; overflow-x: auto; gap: 20px; padding: 20px; scrollbar-width: none; }
 .gallery-grid img { flex: 0 0 80%; height: 300px; object-fit: cover; border: 1px solid black; }
 .content-block-ocra { background: var(--ocra); padding: 40px 20px; }
-.events-slider { display: flex; overflow-x: auto; gap: 20px; }
-.event-card-item { flex: 0 0 85%; background: white; border: 2px solid black; }
-.event-image-box { height: 350px; background: #ccc; }
-.event-image-box img { width: 100%; height: 100%; object-fit: cover; }
+.content-block-terracotta { background: var(--terracotta); padding: 40px 20px; color: white; }
 .content-block-black { background: black; padding: 40px; text-align: center; }
-.museum-footer { padding: 30px; text-align: center; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
+.events-slider { display: flex; overflow-x: auto; gap: 20px; }
+.event-card-item { flex: 0 0 85%; background: white; border: 2px solid black; padding: 15px; }
+.event-image-box { height: 200px; background: #ccc; margin-bottom: 10px; }
+.event-image-box img { width: 100%; height: 100%; object-fit: cover; }
+.museum-footer { padding: 30px; text-align: center; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; border-top: 2px solid var(--nero); }
