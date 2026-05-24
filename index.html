@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>ROSARIOSPINA — Visual Archive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="editorial-header">
+        <div class="logo-container">
+            <h1 class="main-title"><a href="index.html">ROSARIOSPINA</a></h1>
+            <p class="subtitle">Visual Archive</p>
+        </div>
+    </header>
+
+    <section id="gallery" class="content-block-white">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-grid" id="gallery-slider">
+            <img src="foto1.jpg" alt="Progetto 1">
+            <img src="foto2.jpg" alt="Progetto 2">
+        </div>
+        <a href="#" class="visita-button">Visita</a>
+    </section>
+
+    <section id="events" class="content-block-ocra">
+        <h2 class="section-title">Events</h2>
+        <div class="events-slider">
+            <article class="event-card-item">
+                <div class="event-image-box"><img src="event1.jpg" alt="Evento"></div>
+                <div class="event-text">
+                    <h3>A Papariata</h3>
+                    <p>Indagine sulla materialità.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="content-block-black">
+        <h2 class="section-title" style="color: white;">Contact</h2>
+        <div class="contact-info" style="color: white;">
+            <p>Rosario Spina<br>Via Matteo Renato Imbriani 222<br>Catania - 95128</p>
+        </div>
+    </section>
+
+    <footer class="museum-footer">
+        <p>© 2026 Rosario Spina. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('gallery-slider');
+        setInterval(() => {
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+            if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) slider.scrollTo({ left: 0, behavior: 'smooth' });
+        }, 3000);
+    </script>
+</body>
+</html>
